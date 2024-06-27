@@ -12,7 +12,7 @@ def start(update: Update, context: CallbackContext) -> None:
 def ask_question(update: Update, context: CallbackContext) -> None:
     user_question = update.message.text
     # ইউজারের প্রশ্ন URL এ যুক্ত করা
-    api_url = f"https://gemini-pro-green.vercel.app/ask?q={user_question}"
+    api_url = f"https://gemini-api-7j8p.onrender.com/ask?q={user_question}"
     response = requests.get(api_url)
     
     if response.status_code == 200:
